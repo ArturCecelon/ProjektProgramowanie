@@ -22,7 +22,7 @@ public class login {
                     switch (b) {
                         case 1:
 
-                            ResultSet result1 = ExecuteQuery.executeSelect("SELECT * FROM cars WHERE czydostepny = 'true'");
+                            ResultSet result1 = ExecuteQuery.executeSelect("SELECT * FROM cars WHERE czydostepny = 'true' order by id asc");
                             System.out.println("ID || Marka || Typ || Cena || czyDostępny");
                             while (result1.next()) {
                                 int id = result1.getInt("id");
@@ -48,6 +48,7 @@ public class login {
                         case 4:
                             rent r3 = new rent();
                             r3.jakieWypozyczone(loginB);
+                            break;
                     }
                 } while (b != 5);
             }

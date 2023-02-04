@@ -7,7 +7,7 @@ public class ConnectDB {
 
     private static String URL = "jdbc:postgresql://localhost/wypozyczalnia_sam";
     private static String USER = "postgres";
-    private static String PASSWORD = "p@ssw0rd";
+    private static String PASSWORD = "P@ssw0rd";
 
     public static Connection connect(){
         Connection connection = null;
